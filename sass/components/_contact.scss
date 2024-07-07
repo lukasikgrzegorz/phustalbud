@@ -15,7 +15,7 @@
 }
 
 .contact__title {
-    font-size: 26px;
+    font-size: 32px;
     line-height: 2;
     font-weight: 600;
     margin-bottom: 30px;
@@ -85,10 +85,30 @@
 .contact__wrapper{
     width: 100%;
     display: flex;
-    gap: 18px;
+    gap: 20px;
 }
 
 .contact__middle-title{
     font-weight: 700;
     font-size: 21px;
+    position: relative;
+    margin-bottom: 13px;
+
+    &::after {
+            content: "";
+            position: absolute;
+            top: 32px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: block;
+            width: 8px;
+            height: 8px;
+            border-radius: 100%;
+            background-color: getColor("accent-color");
+        }
+}
+
+.contact__map{
+    width: 100%;
+    height: 300px;
 }
