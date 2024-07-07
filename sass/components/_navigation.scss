@@ -1,0 +1,28 @@
+@use './../utils' as *;
+
+.navigation__list{
+    height: 100%;
+    gap: 15px;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+
+@media screen and (min-width: 768px) {
+    .navigation__list{
+        display: flex
+    }
+}
+
+.navigation__link{
+    color: white;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 0.2;
+    transition: color $main-animation;
+
+    &:hover,
+    &:focus{
+        color: getColor("accent-color");
+    }
+}

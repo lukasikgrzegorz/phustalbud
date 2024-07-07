@@ -1,0 +1,75 @@
+@use './../utils' as *;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color:getColor("light-background-color");
+    color: getColor("main-color");
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+img{
+    display: block;
+    padding: 0;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: currentColor;
+}
+
+h1,h2,h3{
+    text-align: center;
+}
+
+.is-hidden{
+    display: none;
+}
+
+.invisible{
+    opacity: 0;
+}
+
+.fadeout{
+    transform: translateX(-100%);
+}
+
+.fadein {
+    transform: translateX(100%);
+}
+
+.container{
+    max-width: 1200px;
+    margin: auto;
+    display: flex;  
+}
+.section{
+    width: 100%;
+    padding: 50px 30px;
+}
+
+.button{
+        padding: 10px;
+        color: getColor("main-color");
+        background: getColor("accent-color");
+        border: none;
+        cursor: pointer;
+        font-size: 16px;
+        font-weight: 600;
+        transition: background-color $main-animation;
+        &:hover,
+        &:focus {
+            background-color: getColor("accent-secondary-color");
+        }
+}

@@ -1,0 +1,107 @@
+@use './../utils' as *;
+
+.slider{
+    height: 400px;
+    background-color:transparent;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+
+.slider__thumb{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.slider__image{
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: calc(100% - 50px);
+
+    object-fit: cover;
+    transition: transform 1s ease-in-out;
+}
+
+.slider__text-wrapper{
+    position: absolute;
+    top:0;
+    left: 0;
+    z-index: 2;
+    background-color: getColor("dark-transparent-color");
+    width: 100%;
+    height: calc(100% - 50px);
+    display: flex;
+    flex-direction: column;
+    padding: 0px 0px 0px 0px;
+}
+
+@media screen and (min-width: 768px) {
+    .slider__text-wrapper{
+        padding: 250px 830px 50px 0px;
+    }
+}
+
+
+.slider__claim{
+    color: white;
+    font-size: 26px;
+    font-weight: 500;
+    letter-spacing: 0.01em;
+    text-transform: none;
+    background-color: getColor("dark-secondary-transparent-color");
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.2),
+            0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px -1px rgba(0, 0, 0, 0.12);
+}
+
+// @media screen and (min-width: 480px) {
+//     .slider__title {
+//         font-size: 48px;
+//     }
+// }
+
+// @media screen and (min-width: 768px) {
+//     .slider__title {
+//         font-size: 64px;
+//     }
+// }
+
+// .slider__dynamic-span{
+//     color: white;
+//     font-size: 16px;
+//     font-weight: 400;
+//     letter-spacing: 0.01em;
+//     text-transform: uppercase;
+// }
+
+// @media screen and (min-width: 480px) {
+//     .slider__dynamic-span{
+//         font-size: 24px;
+//     }
+// }
+
+// @media screen and (min-width: 768px) {
+//     .slider__dynamic-span {
+//         font-size: 32px;
+//     }
+// }
+
+// .slider__contact-wrapper{
+//     width:100%;
+//     color: getColor("light-color");
+//     position: absolute;
+//     bottom: 20px;
+//     z-index: 3;
+// }
+
+// @media screen and (min-width:768px) {
+//     .slider__contact-wrapper {
+//         bottom: 70px;
+//     }
+// }

@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/basiclightbox@5.0.4/dist/basicLightbox.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/main.css">
+  <title>PHU STAL-BUD</title>
+</head>
+
+<body>
+  <div class="contactbar">
+    <div class="container contactbar__container">
+      <ul class="phone-mail__list">
+        <li class="phone-mail__item">
+          <a href="phustalbud@gmail.com" class="phone-mail__link">
+            <svg class="phone-mail__icon">
+              <use href="./images/icons.svg#icon-mail"></use>
+            </svg>
+            <span class="phone-mail__text">phustalbud@gmail.com</span>
+          </a>
+        </li>
+        <li class="phone-mail__item">
+          <a href="tel:+512788540" class="phone-mail__link">
+            <svg class="phone-mail__icon">
+              <use href="./images/icons.svg#icon-phone"></use>
+            </svg>
+            <span class="phone-mail__text">660-619-952</span>
+          </a>
+        </li>
+        <li class="phone-mail__item">
+          <a href="tel:+512788540" class="phone-mail__link">
+            <svg class="phone-mail__icon">
+              <use href="./images/icons.svg#icon-location"></use>
+            </svg>
+            <span class="phone-mail__text">Wojska Polskiego 63A, 21-400 Łuków</span>
+          </a>
+        </li>
+        <li class="phone-mail__item">
+          <a href="https://www.facebook.com/profile.php?id=61559962534372" class="phone-mail__link">
+            <svg class="phone-mail__icon social phone-mail__icon-social">
+              <use href="./images/icons.svg#icon-facebook"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+
+    </div>
+  </div>
+  <header class="header">
+    <div class="header__container container">
+      <a href="index.html" class="logo">
+        <img class="logo__image" src="images/logo.png">
+      </a>
+      <nav class="navigation">
+        <ul class="navigation__list">
+          <li class="navigation__item"><a href="#services" class="navigation__link">Oferta</a></li>
+          <li class="navigation__item"><a href="#portfolio" class="navigation__link">Nasze realizacje</a></li>
+          <li class="navigation__item"><a href="#contact" class="navigation__link">Kontakt</a></li>
+        </ul>
+      </nav>
+      <button aria-label="open menu" class="header__menu-btn" menu-open-btn>
+        <svg class="header__icon">
+          <use href="./images/icons.svg#icon-menu"></use>
+        </svg>
+      </button>
+    </div>
+  </header>
+
+  <!--MENU-->
+  <div class="menu" menu-container>
+    <ul class="menu__list">
+      <li class="menu__item"><a href="#about" class="menu__link">O nas</a></li>
+      <li class="menu__item"><a href="#services" class="menu__link">Usługi</a></li>
+      <li class="menu__item"><a href="#portfolio" class="menu__link">Realizacje</a></li>
+      <li class="menu__item"><a href="#contact" class="menu__link">Kontakt</a></li>
+    </ul>
+
+    <button aria-label="close menu" class="menu__close-btn" menu-close-btn><svg class="menu__icon">
+        <use href="./images/icons.svg#icon-close"></use>
+      </svg></button>
+  </div>
+
+  <main>
+    <!--SLIDER-->
+    <div class="slider">
+      <div class="slider__thumb">
+        <img slide-item-1 class="slider__image" src="./images/slider-1.jpg" alt="Zdjęcie spawającego profesionalisty"
+          loading="lazy">
+        <img slide-item-2 class="slider__image fadein" src="./images/slider-2.jpg" alt="Zdjęcie stalowej konstrukcji"
+          loading="lazy">
+        <img slide-item-3 class="slider__image fadeout" src="./images/slider-3.jpg" alt="Zdjęcie specjalisty w masce"
+          loading="lazy">
+      </div>
+      <div class="slider__contact-wrapper">
+       
+      </div>
+      <div class="slider__text-wrapper">
+        <div class="container slider__container">
+          <div class="slider__claim">
+            <span>Oferujemy <b>wyroby</b><br> i <b>usługi</b> najwyższej jakości.</span>
+            <div>
+              <a href="#services"><button class="button">Zobacz więcej</button></a>
+              <a href="#contact"><button class="button">Kontakt</button></a>
+            </div>
+          </div>
+        
+        </div>
+      </div>
+    </div>
+
+    <!--SERVICES-->
+    <div class="services" id="services">
+      <div class="services__container container">
+        <div class="services__section section">
+            <div class="services__thumb">
+              <img src="./images/about.jpg" alt="" class="services__image" loading="lazy">
+            </div>
+        </div>
+        <div class="services__section section">
+          <h2 class="services__title">Oferta</h2>
+          <ul class="services__list">
+            <li class="services__item">
+              <div class="services__icon-holder">
+              </div>
+              <span class="services__text">Usługi spawalnicze</span>
+            </li>
+            <li class="services__item">
+              <div class="services__icon-holder">
+              </div>
+              <span class="services__text">Sprzedaż stali</span>
+            </li>
+            <li class="services__item">
+              <div class="services__icon-holder">
+              </div>
+              <span class="services__text">Konstrukcje stalowe</span>
+            </li>
+            <li class="services__item">
+              <div class="services__icon-holder">
+              </div>
+              <span class="services__text">Wiaty</span>
+            </li>
+            <li class="services__item">
+              <div class="services__icon-holder">
+              </div>
+              <span class="services__text">Hale magazynowe</span>
+            </li>
+            <li class="services__item">
+              <div class="services__icon-holder">
+              </div>
+              <span class="services__text">Ogrodzenia</span>
+            </li>
+            <li class="services__item">
+              <div class="services__icon-holder">
+              </div>
+              <span class="services__text">Balustrady</span>
+            </li>
+            <li class="services__item">
+              <div class="services__icon-holder">
+              </div>
+              <span class="services__text">Materiały budowlane</span>
+            </li>
+          </ul>
+
+        </div>
+      </div>
+    </div>
+
+    <!--PORTFOLIO-->
+    <div class="portfolio" id="portfolio">
+      <div class="container">
+        <div class="section">
+          <h2 class="portfolio__title">Nasze realizacje</h2>
+          <div class="gallery"></div>
+        </div>
+      </div>
+    </div>
+    <!--CONTACT-->
+    <div class="contact" id="contact">
+      <div class="container">
+        <div class="contact__section section">
+          <h2 class="contact__title">Kontakt</h2>
+          <div class="contact__wrapper">
+            <form class="contact__item">
+              <h4 class="contact__middle-title">Napisz do nas</h4>
+              <input class="contact__input" type="name" id="name" placeholder="Imię">
+              <input class="contact__input" type="email" id="email" placeholder="Email">
+              <input class="contact__input" type="phone" id="phone" placeholder="Telefon">
+              <textarea class="contact__textarea" name="message" id="message" placeholder="Wiadomość"></textarea>
+              <button class="button">Wyślij</button>
+            </form>
+            <div class="contact__item">
+              <h4 class="contact__middle-title">Dane kontaktowe</h4>
+                    <ul class="phone-mail__list phone-mail__list--contact">
+                      <li class="phone-mail__item">
+                        <a href="phustalbud@gmail.com" class="phone-mail__link">
+                          <svg class="phone-mail__icon">
+                            <use href="./images/icons.svg#icon-mail"></use>
+                          </svg>
+                          <span class="phone-mail__text phone-mail__text--contact">phustalbud@gmail.com</span>
+                        </a>
+                      </li>
+                      <li class="phone-mail__item">
+                        <a href="tel:+512788540" class="phone-mail__link">
+                          <svg class="phone-mail__icon">
+                            <use href="./images/icons.svg#icon-phone"></use>
+                          </svg>
+                          <span class="phone-mail__text phone-mail__text--contact">660-619-952</span>
+                        </a>
+                      </li>
+                      <li class="phone-mail__item">
+                        <a href="tel:+512788540" class="phone-mail__link">
+                          <svg class="phone-mail__icon">
+                            <use href="./images/icons.svg#icon-location"></use>
+                          </svg>
+                          <span class="phone-mail__text phone-mail__text--contact">Wojska Polskiego 63A, 21-400 Łuków</span>
+                        </a>
+                      </li>
+                      <li class="phone-mail__item">
+                        <a href="https://www.facebook.com/profile.php?id=61559962534372" class="phone-mail__link">
+                          <svg class="phone-mail__icon social phone-mail__icon-social">
+                            <use href="./images/icons.svg#icon-facebook"></use>
+                          </svg>
+                        </a>
+                      </li>
+                    </ul>
+            </div>
+          </div>
+         
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer class="footer">
+    <div class="footer__section">
+      <span class="footer__text">PHU stalbud s.c. &copy; 2024</span>
+    </div>
+
+  </footer>
+
+  <script src="./js/sticky-header.js"></script>
+  <script src="./js/mobile-menu.js"></script>
+  <script src="./js/faded-slider.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/basiclightbox@5.0.4/dist/basicLightbox.min.js"></script>
+  <script src="js/portfolio-gallery.js" type="module"></script>
+</body>
+
+</html>

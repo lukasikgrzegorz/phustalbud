@@ -1,0 +1,22 @@
+@use './../utils' as *;
+
+.footer{
+    background-color: getColor("dark-background-color");
+    color: getColor("light-color");
+}
+
+.footer__section{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    padding: 30px;
+}
+
+.footer__text{
+    text-align: center;
+}

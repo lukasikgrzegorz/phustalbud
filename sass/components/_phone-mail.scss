@@ -1,0 +1,74 @@
+@use './../utils' as *;
+
+.phone-mail__list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 15px;
+    column-gap: 25px;
+    width: 100%;
+    color: getColor("light-color");
+}
+
+.phone-mail__list--contact{
+    flex-direction: column;
+    color: getColor("main-color");
+}
+
+@media screen and (min-width:768px) {
+    .phone-mail__list {
+        flex-direction: row;
+    }
+}
+
+.phone-mail__link {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    color: currentColor;
+    width: 100%;
+    overflow: hidden;
+    transition: color $main-animation;
+
+    &:hover,
+    &focus{
+        color: getColor("accent-color");
+    }
+
+}
+
+.phone-mail__item:last-child{
+    margin-left: auto;
+        /* Przesuwa ostatni element na prawą stronę */
+        margin-right: 0;
+        /* Usuwa prawy margines dla ostatniego elementu */
+}
+
+.phone-mail__icon {
+    fill: currentColor;
+    width: 15px;
+    height: 15px;
+}
+
+.phone-mail__icon-social {
+    width: 20px;
+    height: 20px;
+}
+
+.phone-mail__text {
+    display: block;
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 0.01rem;
+    word-wrap: break-word;
+}
+
+.phone-mail__text--contact{
+    font-size: 20px
+}
+
+@media screen and (min-width: 480px) {
+    .phone-mail__text {
+        font-size: 12px;
+    }
+}

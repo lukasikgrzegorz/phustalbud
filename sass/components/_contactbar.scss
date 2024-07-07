@@ -1,0 +1,16 @@
+@use './../utils' as *;
+
+.contactbar{
+    width: 100%;
+    height: auto;
+    padding: 12px 30px;
+    background-color: getColor("dark-background-color");
+    transition: background-color $main-animation;
+}
+
+.contactbar__container{
+    justify-content: flex-start;
+}
+
+
+

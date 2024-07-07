@@ -1,0 +1,18 @@
+$colors: (
+    "main-color":#001f33,
+    "accent-color": #feed00,
+    "accent-secondary-color": #feed99,
+    "light-color": #ffffff,
+    "dark-background-color":#201b21,
+    "light-background-color":#f8f8f8,
+    "light-transparent-color": rgba(255,255,255,0.6),
+    "dark-transparent-color": rgba(25, 28, 38, 0.4),
+    "dark-secondary-transparent-color": rgba(25, 28, 38, 0.7),
+    "first-child-color":#80ccff,
+    "second-child-color":#66c2ff,
+    "third-child-color":#4db8ff,
+);
+
+@function getColor($key) {
+    @return map-get($colors, $key);
+}
