@@ -10,6 +10,13 @@
 .services__container{
     border: 5px dotted getColor("accent-color");
     width: 100%;
+    flex-direction: column-reverse;
+}
+
+@media screen and (min-width: 768px) {
+    .services__container {
+        flex-direction: row;
+    }
 }
 
 .services__section{
@@ -121,9 +128,14 @@
 
 .services__thumb {
     width: 100%;
-    max-height: 400px;
     box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.2),
         0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px -1px rgba(0, 0, 0, 0.12);
+}
+
+@media screen and (min-width: 768px) {
+    .services__thumb {
+        max-height: 400px;
+    }
 }
 
 .services__image {

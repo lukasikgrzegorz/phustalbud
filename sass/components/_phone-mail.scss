@@ -2,7 +2,7 @@
 
 .phone-mail__list {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     row-gap: 15px;
     column-gap: 25px;
@@ -60,7 +60,7 @@
 }
 
 .phone-mail__text {
-    display: block;
+    display: none;
     font-size: 10px;
     font-weight: 600;
     letter-spacing: 0.01rem;
@@ -68,15 +68,18 @@
 }
 
 .phone-mail__text--contact{
-    font-size: 16px
+    font-size: 16px;
+    display: block;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 768px) {
     .phone-mail__text {
         font-size: 12px;
+        display: block;
     }
 
     .phone-mail__text--contact {
-        font-size: 16px
+        font-size: 16px;
+        display: block;
     }
 }

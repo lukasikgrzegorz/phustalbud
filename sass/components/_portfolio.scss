@@ -1,5 +1,5 @@
 @use './../utils' as *;
-@media screen and (min-width: 768px) {
+
     .portfolio {
         scroll-margin-top: 90px;
         background: linear-gradient(to bottom, getColor("dark-secondary-transparent-color"), getColor("dark-secondary-transparent-color")),
@@ -9,7 +9,7 @@
             background-size: cover;
             scroll-margin-top: 80px;
     }
-}
+
 .portfolio__title {
     font-size: 32px;
     line-height: 2;
@@ -49,7 +49,7 @@
 
 @media screen and (min-width:768px) {
     .gallery__item {
-        flex-basis: 100%
+        flex-basis: calc((100% - 30px) / 2)
     }
 }
 
